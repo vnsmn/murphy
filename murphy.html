@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>murphy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <script type="text/javascript" src="lib/js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="lib/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="lib/js/hashset.js"></script>
+    <script type="text/javascript" src="lib/js/hashtable.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.numberformatter-1.2.4.js"></script>
+    <script type="text/javascript" src="lib/js/murphy.js"></script>
+    <script type="text/javascript" src="elementary.js"></script>
+    <script type="text/javascript" src="intermedia.js"></script>
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+            var MURPHY = new Murphy(elementaryJson, intermediaJson, "unitSelectionID");
+            MURPHY.createControl("accordionID");
+            //MURPHY.fillAccordion("#accordionID");
+            //$( "#accordionID" ).accordion();
+            //$( "#secID2" ).accordionClick();
+        });
+        //]]>
+    </script>
+    <style type="text/css">
+        input, select, button {
+            margin: 0em;
+            font: normal normal normal normal 10px/normal Arial;
+            text-rendering: auto;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            text-align: start;
+        }
+
+        select:not {
+            overflow: visible;
+        }
+
+        select, button, input {
+            box-sizing: border-box;
+            align-items: center;
+            border: 1px solid;
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+            cursor: default;
+        }
+
+        table.embedded {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: blue;
+            background-color: #99EBED;
+        }
+
+        table.main {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: blue;
+            background-color: #99EBED;
+            align: center;
+            width: 100%;
+            bgcolor: #ffcc00;
+        }
+
+        .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+            border: 1px solid #d3d3d3;
+            background: #e6e6e6 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+            font-weight: normal;
+            color: #555555;
+        }
+
+        .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+            border-bottom-right-radius: 10px;
+        }
+
+        .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+            border-bottom-left-radius: 10px;
+        }
+
+        .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+            border-top-right-radius: 10px;
+        }
+
+        .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+            border-top-left-radius: 10px;
+        }
+
+        .ui-state-active {
+            border: 1px solid #aaaaaa;
+            background: #ffffff url("images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+            font-weight: normal;
+            color: #212121;
+        }
+
+        .span-unit-config {
+            font-size: xx-large;
+            font-weight: bolder;
+            color: blue;
+            background: lightskyblue;
+        }
+        .span-unit-config-selected {
+            font-size: xx-large;
+            font-weight: bolder;
+            color: blue;
+            background: goldenrod;
+        }
+        .table-unit-config {
+
+        }
+        .image-text-start {
+            background: transparent url('css/images/media-playback-start.png') no-repeat top left;
+            background-size: 35px;
+            height: 37px;
+            width: 37px;
+            vertical-align: middle;
+            line-height: 37px;
+            cursor:pointer;
+        }
+        .image-text-stop {
+            background: transparent url('css/images/media-playback-stop.png') no-repeat top left;
+            background-size: 35px;
+            height: 37px;
+            width: 37px;
+            vertical-align: middle;
+            line-height: 37px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="unitSelectionID" style="display:none"></div>
+<table id="tableID" bgcolor="#ffcc00" bordercolor="#0000ff"
+       cellspacing="0" border="1" cellpadding="1">
+    <tbody></tbody>
+</table>
+<div id="accordionID"/>
+</body>
+
+</html>
+
