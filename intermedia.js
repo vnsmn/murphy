@@ -7,7 +7,7 @@ var intermediaJson = {
 			phrase : "I'm cold can you close the window please?",
 			source : "i_m_cold_can_you_close_the_window_please.mp3",
 			words : [ "i", "am", "learning", "english" ],
-			others : [ "i_m_cold_can_you_close_the_window_please" ]
+			others : [ ]
 
 		} ]
 	}	
